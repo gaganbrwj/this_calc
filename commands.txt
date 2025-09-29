@@ -1,0 +1,109 @@
+git clone https://github.com/v-s-v-i-s-h-w-a-s/my-calci.git
+
+Adding and Committing Changes in Git:
+git status
+git add tests/unit/test_calculator.py
+
+git status
+git commit -m “Added and Tested with negative values”
+
+git status 
+git push origin main
+git status
+
+Branching in Git:
+git branch
+
+git branch -a 
+
+git branch feature/multi-div
+git branch
+git branch -a
+
+git checkout feature/multi-div
+
+git branch
+git branch -a
+
+Comitting Changes on feature/multi-div
+git status
+git add .
+
+git status
+git commit -m “Changed Multiply and Division Functions with the test cases”
+
+git status 
+git push origin feature/multi-div
+git status
+
+Checking the isolation:
+git branch
+
+git checkout main
+
+git branch
+
+
+Merging the feature branch with main:
+git branch
+
+git checkout main
+
+git branch
+
+git merge feature/mutli-div
+
+Update GitHub repo after merge:
+git push origin 
+
+
+Feature branch for power and square root functions:
+git branch
+git branch -a 
+
+git branch feature/pow-sqrt
+git branch
+git branch -a
+
+git checkout feature/pow-sqrt
+git branch
+git branch -a
+
+Updating the branch and pushing to GitHub:
+git status 
+
+git add .
+git status
+
+git commit -m “Added power and square root functions with test cases”
+git status
+
+git push origin feature/pow-sqrt
+git status
+
+Updating local git with the remote repo:
+git branch
+git branch -a
+git checkout main
+git branch
+git branch -a
+git status
+
+git fetch origin main
+git status
+
+git pull origin main
+
+
+pytest tests/ -v
+pytest tests/ --cov=src
+pytest tests/ --cov=src --cov-report=html
+pylint src/
+pylint src/ --output-format=text > lint_report.txt
+pylint src/ --output-format=colorized
+black src/ tests/ --check
+black src/ tests/ --diff
+black src/ tests/
+bandit -r src/
+bandit -r src/ -v
+bandit -r src/ -f json -o security_report.json

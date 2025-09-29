@@ -1,0 +1,7 @@
+pytest
+pytest-cov
+pylint
+click
+requests
+bandit
+black
