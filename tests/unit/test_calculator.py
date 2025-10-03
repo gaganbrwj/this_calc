@@ -59,10 +59,6 @@ class TestMultiplyDivide:
         assert divide(-12, -3) == 4
 
 
-
-    
-
-
 class TestAdvancedOperations:
     """Test power and square root operations"""
      
@@ -82,9 +78,7 @@ class TestAdvancedOperations:
         assert square_root(9) == 3
         assert square_root(16) == 4
      
-
     def test_square_root_negative_raises_error(self):
-
         """Test that square root of negative raises ValueError"""
         with pytest.raises(ValueError, match="Cannot calculate square root of negative"):
             square_root(-4)
