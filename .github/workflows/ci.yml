@@ -2,9 +2,9 @@ name: CI/CD pipeline
 
 on:
   push:
-    branches: [main, cli]        # Run workflow on pushes to main or cli
+    branches: ["**"]        # Run workflow on pushes to main or cli
   pull_request:
-    branches: [main]             # Run workflow on PRs targeting main
+    branches: ["**"]             # Run workflow on PRs targeting main
 
 jobs:
   # Build stage: prepare Python and install dependencies
